@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       button.addEventListener('click', (e) => {
         // Grabs the id of the element that goes by the name, "id"
         const id = e.target.getAttribute('data-id');
-        const newSleep = e.target.getAttribute('data-newdevoured');
+        const newDevoured = e.target.getAttribute('data-newdevoured');
 
         const newDevouredState = {
           devoured: newDevoured,
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           // Check that the response is all good
           // Reload the page so the user can see the new quote
           if (response.ok) {
-            console.log(`changed sleep to: ${newDevoured}`);
+            console.log(`changed available to: ${newDevoured}`);
             location.reload('/');
           } else {
             alert('something went wrong!');
@@ -51,12 +51,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
       // Grabs the value of the textarea that goes by the name, "quote"
       const newBurger = {
-        name: document.getElementById('ca').value.trim(),
-        sleepy: document.getElementById('sleepy').checked,
+        burger_name: document.getElementById('ca').value.trim(),
+        devoured: document.getElementById('available').checked,
       };
 
       // Send POST request to create a new quote
-      fetch('/api/cats', {
+      fetch('/api/burgers', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
