@@ -1,7 +1,7 @@
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-light bg-success">
   <div class="container-fluid">
     <span class="navbar-brand mb-0 mx-auto">
-      <h1>Burgers</h1>
+      <h1 class="text-warning">Burgers</h1>
     </span>
   </div>
 </nav>
@@ -11,30 +11,30 @@
 </div>
 
 <div class="container-fluid">
-  <div class="card">
-    <div class="card-header text-center">
+  <div class="card bg-warning mx-auto w-75 bg-">
+    <div class="card-header bg-success text-warning text-center">
       <h2>Add a Burger</h2>
     </div>
-    <div class="card-body mx-auto">
+    <div class="card-body bg-warning mx-auto">
       <form id="create-form">
-        <div class="form-group">
-          <label for="ca">Burger Name:</label>
-          <input type="text" id="ca" name="burger_name">
+        <div class="form-group text-center">
+          <h3 for="ca">Burger Name:</h3>
+          <input class="fs-4" type="text" id="ca" name="burger_name">
         </div>
 
         <div class="form-group">
-          <label for="devoured">Devoured?</label><br>
+          <label class="fs-3 mt-4 text-center" for="devoured">Devoured?</label>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="devoured" value="0" id="available" checked>
-            <label class="form-check-label" for="flexRadioDefault2">Available</label>
+            <input class="form-check-input fs-5" type="radio" name="devoured" value="0" id="available" checked>
+            <label class="form-check-label fs-5" for="flexRadioDefault2">Available</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="devoured" value="1" id="devoured">
-            <label class="form-check-label" for="flexRadioDefault1">Devoured!</label>
+            <input class="form-check-input fs-5" type="radio" name="devoured" value="1" id="devoured">
+            <label class="form-check-label fs-5" for="flexRadioDefault1">Devoured!</label>
           </div>
         </div>
 
-        <button class="btn btn-primary" type="submit">Add Burger</button>
+        <button class="btn btn-success mt-4 fs-5" type="submit">Add Burger</button>
       </form>
     </div>
   </div>
@@ -46,12 +46,12 @@
   <div class="row">
 
     {{!-- Available Card --}}
-    <div class="col-sm-6">
-      <div class="card mb-5 mt-5">
-        <div class="card-header text-center">
+    <div class="col-lg-6">
+      <div class="card bg-warning mb-5 mt-5">
+        <div class="card-header bg-success text-warning text-center">
           <h2>Available Burgers</h2>
         </div>
-        <div class="card-body">
+        <div class="card-body text-center bg-warning">
           <ul>
             {{#each burgers}}
             {{#if devoured}}
@@ -64,12 +64,12 @@
     </div>
 
     {{!-- Devoured Card --}}
-    <div class="col-sm-6">
-      <div class="card mb-5 mt-5">
-        <div class="card-header text-center">
-          <h2>Burgers that have been devoured!</h2>
+    <div class="col-lg-6">
+      <div class="card bg-warning mb-5 mt-5">
+        <div class="card-header bg-success text-warning text-center">
+          <h2>Devoured Burgers!</h2>
         </div>
-        <div class="card-body">
+        <div class="card-body text-center bg-warning">
           <ul>
             {{#each burgers}}
             {{#unless devoured}}

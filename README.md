@@ -23,7 +23,7 @@ The following animation demonstrates the application functionality:
 
 * Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- Available.
 
-* Each burger in the waiting area also has a `Eat and Devour!` button. When the user clicks it, the burger will move to the right side of the page.
+* Each burger in the waiting area also has a `Devour!` button. When the user clicks it, the burger will move to the right side of the page.
 
 
 ## Installation
