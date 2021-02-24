@@ -28,7 +28,7 @@ The following animation demonstrates the application functionality:
 
 ## Installation
 Link to website:
-[Web App Link]()
+[Web App Link](https://sleepy-coast-16684.herokuapp.com/)
 
 ## Usage 
 For Fun!
