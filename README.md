@@ -16,7 +16,7 @@
 
 The following animation demonstrates the application functionality:
 
-![GIF Of Functionality](./INSERT GIF HERE)
+![GIF Of Functionality](./assets/imgs/Burgers.gif)
 
 ## Description
 * Burgers! is a restaurant app that lets users input the names of burgers they'd like to eat.
